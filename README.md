@@ -128,7 +128,7 @@ git push origin main
 
 ## ⚠️ Shenime te rendesishme
 
-- **MOS** ndrysho strukturen e projektit pa u konsultuar me liderin e grupit
+- **MOS** ndrysho strukturen e projektit pa u konsultuar me anetaret e grupit
 - **GJITHMONE** bej pull ndryshimet me te fundit para se te fillosh punen: `git pull`
 - **KURRE** mos bej push pa u siguruar qe gjithçka funksionon siç duhet
 - **TESTO** ndryshimet e tua lokalisht para se te besh push
@@ -144,14 +144,12 @@ git push origin main
 - 
 
 **Problemet me Git:**
-- Nese ke konflikte merge, konsultohu me liderin e grupit
+- Nese ke konflikte merge, konsultohu me anetaret e grupit
 - Perdor `git status` per te pare gjendjen aktuale
 - Perdor `git log --oneline` per te pare commit-et e fundit
 
 
 
 
-**Kodim të këndshëm! 🎉**
-
-*Përditësuar për herë të fundit: Maj 2025*
+**Kodim të këndshem! 🎉**
   
