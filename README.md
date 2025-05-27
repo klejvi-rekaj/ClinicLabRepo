@@ -14,9 +14,9 @@ Nje aplikacion i plote per menaxhimin e laboratoreve klinike i ndertuar me .NET 
 
 Para se te fillosh, sigurohu qe ke te instaluara keto ne kompjuterin tend:
 
-- **Visual Studio** (me .NET Desktop Development workload)
+- **Visual Studio** 
 - **Git bash** - Shkarko nga [https://git-scm.com](https://git-scm.com)
-- **.NET Framework** (versioni i pershtatshem)
+- **.NET Core** (versioni i pershtatshem)
 
 ## 📥 Udhezuesi i Instalimit
 
@@ -68,7 +68,7 @@ ClinicLabApp/
 
 1. **Nderto projektin**
    - Shtyp `Ctrl + Shift + B` ose shko te **Build** → **Build Solution**
-   - Sigurohu qe nuk ka gabime kompajlimi
+   - Sigurohu qe nuk ka gabime kompilimi
 
 2. **Verifiko qe gjithçka funksionon**
    - Kontrollo qe te gjitha varesite jane zgjidhur
@@ -102,7 +102,7 @@ git push origin main
 - **Gjithmone bej pull** ndryshimet me te fundit para se te fillosh punen
 - **Testo plotesisht** para se te besh push ndryshimet
 - **Perdor mesazhe pershkruese commit-i**
-- **Mos ndrysho strukturen e projektit** pa miratimin e liderit te grupit
+- **Mos ndrysho strukturen e projektit** pa miratimin e anetareve te tjere te grupit
 
 ## 🤝 Kontributi
 
