@@ -1,22 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using ClinicLab.Presentation;
 
 namespace ClinicLab
 {
     static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            System.Windows.Forms.Application.EnableVisualStyles();
+            System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(false);
+
+
+
+            // Kjo esht forma qe hapet tani per tani, vetem per testim 
+            // ju qe do punoni ne module te tjera, si AdminDashboard ose Login etj
+            // thjesht ndryshojeni rreshtin poshte sipas nevojes:
+            //
+            // Application.Run(new AdminDashboardForm());
+            // Application.Run(new LoginForm());
+            //
+            // Nese nuk e ndryshoni kur ti beni run do ju hapet forma e punonjesit te laboratorit 
+            System.Windows.Forms.Application.Run(new LabWorkerForm()); 
+
         }
     }
 }
+
+
+
+

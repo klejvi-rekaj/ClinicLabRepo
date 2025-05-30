@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "Default": "Server=KVN\\SQLEXPRESS01;Database=ClinicLabDB;Trusted_Connection=True;"
+  }
+}
