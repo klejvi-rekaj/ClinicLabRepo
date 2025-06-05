@@ -32,7 +32,8 @@ namespace ClinicLab.Presentation
                 Text = "Edit Patient";
                 txtFirstName.Text = Patient.FirstName;
                 txtLastName.Text = Patient.LastName;
-                dtpDateOfBirth.Value = Patient.DateOfBirth;
+                dtpDateOfBirth.Value = Patient.DateOfBirth ?? DateTime.Now.AddYears(-30);
+
                 cboGender.SelectedItem = Patient.Gender;
                 txtPhone.Text = Patient.PhoneNumber;
                 txtEmail.Text = Patient.Email;
@@ -46,33 +47,10 @@ namespace ClinicLab.Presentation
             }
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            if (!ValidateInput()) return;
+      
 
 
-            Patient.FirstName = txtFirstName.Text;
-            Patient.LastName = txtLastName.Text;
-            Patient.PhoneNumber = txtPhone.Text;
-            Patient.Email = txtEmail.Text;
-            Patient.Address = txtAddress.Text;
-            Patient.DateOfBirth = dtpDateOfBirth.Value;
-            Patient.Gender = cboGender.SelectedItem?.ToString();
-
-            this.DialogResult = DialogResult.OK;
-            this.Close();
-        }
-
-
-
-
-        private void cboGender_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void btnCancel_Click(object sender, EventArgs e)
+        private void BtnCancel_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.Cancel;
             Close();
@@ -104,6 +82,29 @@ namespace ClinicLab.Presentation
             return true;
         }
 
-     
+        private void cboGender_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            if (!ValidateInput()) return;
+
+
+            Patient.FirstName = txtFirstName.Text;
+            Patient.LastName = txtLastName.Text;
+            Patient.PhoneNumber = txtPhone.Text;
+            Patient.Email = txtEmail.Text;
+            Patient.Address = txtAddress.Text;
+            Patient.DateOfBirth = dtpDateOfBirth.Value;
+            Patient.Gender = cboGender.SelectedItem?.ToString();
+
+            this.DialogResult = DialogResult.OK;
+            this.Close();
+        }
+
+
+
     }
 }

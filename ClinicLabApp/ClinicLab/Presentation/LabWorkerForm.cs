@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using ClinicLab.DataAccess;
+using ClinicLab.Application.BusinessLogic;
 
 namespace ClinicLab.Presentation
 {
@@ -17,8 +12,6 @@ namespace ClinicLab.Presentation
             InitializeComponent();
         }
 
-
-
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             using (var patientForm = new PatientForm())
@@ -27,12 +20,13 @@ namespace ClinicLab.Presentation
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void pictureboxInvoices_Click(object sender, EventArgs e)
         {
+            using var dbContext = new ClinicLabDbContext();
+            var invoiceService = new InvoiceService(dbContext);
 
+            using var invoiceForm = new InvoiceForm(invoiceService);
+            invoiceForm.ShowDialog();
         }
-
-      
     }
-
 }

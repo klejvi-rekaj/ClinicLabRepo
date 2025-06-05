@@ -33,8 +33,11 @@
             pictureBox2 = new PictureBox();
             label1 = new Label();
             label2 = new Label();
+            pictureboxInvoices = new PictureBox();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureboxInvoices).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -64,7 +67,7 @@
             label1.Size = new Size(195, 20);
             label1.TabIndex = 1;
             label1.Text = "Manage Patients Dashboard";
-            label1.Click += label1_Click;
+           
             // 
             // label2
             // 
@@ -74,18 +77,39 @@
             label2.Size = new Size(128, 20);
             label2.TabIndex = 2;
             label2.Text = "Lab Worker Board";
-          
+            // 
+            // pictureboxInvoices
+            // 
+            pictureboxInvoices.Image = (Image)resources.GetObject("pictureboxInvoices.Image");
+            pictureboxInvoices.Location = new Point(464, 83);
+            pictureboxInvoices.Name = "pictureboxInvoices";
+            pictureboxInvoices.Size = new Size(202, 184);
+            pictureboxInvoices.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureboxInvoices.TabIndex = 3;
+            pictureboxInvoices.TabStop = false;
+            pictureboxInvoices.Click += pictureboxInvoices_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(464, 296);
+            label3.Name = "label3";
+            label3.Size = new Size(197, 20);
+            label3.TabIndex = 4;
+            label3.Text = "Manage Invoices Dashboard";
             // 
             // LabWorkerForm
             // 
             ClientSize = new Size(831, 493);
+            Controls.Add(label3);
+            Controls.Add(pictureboxInvoices);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(pictureBox2);
             Name = "LabWorkerForm";
-          
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureboxInvoices).EndInit();
             ResumeLayout(false);
             PerformLayout();
             // 
@@ -98,5 +122,7 @@
         private PictureBox pictureBox2;
         private Label label1;
         private Label label2;
+        private PictureBox pictureboxInvoices;
+        private Label label3;
     }
 }
