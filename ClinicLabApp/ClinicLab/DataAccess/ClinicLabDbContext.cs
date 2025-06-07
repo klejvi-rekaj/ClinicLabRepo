@@ -5,13 +5,10 @@ namespace ClinicLab.DataAccess
 {
     public class ClinicLabDbContext : DbContext
     {
-        public DbSet<Patient> Patients { get; set; }
-        public DbSet<Invoice> Invoices { get; set; }
+        public DbSet<User> Users { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer("Server=LAPTOP-0KTCT61P;Database=ClinicLabertaDb;Trusted_Connection=True;");
-        }
+        public ClinicLabDbContext(DbContextOptions<ClinicLabDbContext> options)
+            : base(options) { }
     }
 }
 
