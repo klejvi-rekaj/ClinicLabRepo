@@ -104,6 +104,9 @@ namespace ClinicLab.Presentation
             return true;
         }
 
-     
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

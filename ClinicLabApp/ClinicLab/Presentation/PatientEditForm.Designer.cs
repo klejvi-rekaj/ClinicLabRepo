@@ -33,6 +33,7 @@
             label7 = new Label();
             label8 = new Label();
             label9 = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
             // txtFirstName
@@ -107,7 +108,11 @@
             // 
             // label1
             // 
-          
+            label1.Location = new Point(0, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(100, 23);
+            label1.TabIndex = 17;
+            // 
             // label4
             // 
             label4.AutoSize = true;
@@ -162,11 +167,22 @@
             label9.TabIndex = 16;
             label9.Text = "Enter Surname";
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(70, 23);
+            label2.Name = "label2";
+            label2.Size = new Size(118, 20);
+            label2.TabIndex = 18;
+            label2.Text = "Enter First Name";
+            label2.Click += label2_Click;
+            // 
             // PatientEditForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 562);
+            Controls.Add(label2);
             Controls.Add(label9);
             Controls.Add(label8);
             Controls.Add(label7);
@@ -207,5 +223,6 @@
         private Label label7;
         private Label label8;
         private Label label9;
+        private Label label2;
     }
 }

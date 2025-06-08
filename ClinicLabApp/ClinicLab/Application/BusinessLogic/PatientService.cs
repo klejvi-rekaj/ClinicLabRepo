@@ -11,7 +11,7 @@ namespace ClinicLab.Application.BusinessLogic
 
         public PatientService(ClinicLabDbContext db)
         {
-            _db = db; 
+            _db = db;
         }
 
         public List<Patient> GetAllPatients() => _db.Patients.ToList();
